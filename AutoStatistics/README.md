@@ -11,7 +11,7 @@ ConfigExtention:用于集成的项目中app build.gradle进行的配置项
 use like this:
 apply plugin: 'trace_plugin'
 
-statConfig{
+traceConfig{
     showLog = false
     keepModifiedJar = true
     //需要被hook的class都需要在此列表配置,可以具体到类，也可以是包名，
@@ -32,6 +32,6 @@ track module 数据存储与上报sdk
 ```
 
 ```
-statconfig module debug调试工具
+debugger module debug调试工具
 
 ```
