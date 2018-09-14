@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StatPlugin</string>
+    <string name="format_index">[%1$d]</string>
+</resources>

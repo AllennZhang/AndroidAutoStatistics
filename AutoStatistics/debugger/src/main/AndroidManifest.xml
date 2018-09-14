@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jerry.codeless.statconfig" >
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application>
+        <service android:name="com.jerry.codeless.statconfig.FloatingService"
+            android:exported="true"
+            android:enabled="true"/>
+    </application>
+</manifest>

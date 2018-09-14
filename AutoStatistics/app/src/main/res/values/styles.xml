@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--  popuwindow底部弹窗样式 -->
+
+    <style name="add_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowAnimationStyle">@style/bottom_popwindow_anim_style</item> <!--动画-->
+    </style>
+
+    <!--  popuwindow底部弹窗样式 -->
+    <style name="bottom_popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_popu_enterin</item>
+        <item name="android:windowExitAnimation">@anim/anim_popu_enterout</item>
+    </style>
+
+</resources>

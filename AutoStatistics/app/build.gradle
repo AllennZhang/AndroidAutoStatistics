@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: com.hipac.codeless.plugin.InjectPlugin
+//apply plugin: 'track_plugin'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.yt.statistics.statplugin"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 3
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex-config.pro')//方法不可控，不是最优解
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions{
+        javaMaxHeapSize  "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //    compile 'org.javassist:javassist:3.22.0-GA'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation project(':track')
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.2'
+    // add library
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation project(':debugger')
+}
+
+
+
+//greendao
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+greendao {
+    //数据库schema版本，也可以理解为数据库版本号
+    schemaVersion 1
+    //设置DaoMaster 、DaoSession、Dao包名
+    daoPackage 'com.yt.statistics.greendao'
+    //设置DaoMaster 、DaoSession、Dao目录
+    targetGenDir 'src/main/java'
+    //设置生成单元测试目录
+//    targetGenDirTest
+    //设置自动生成单元测试用例
+//    generateTests
+}
+
+
+
+////无埋点插件配置
+//apply plugin: 'track-plugin'
+
+traceConfig{
+    showLog = false
+    keepModifiedJar = true
+    // 需要被hook的class都需要在此列表配置
+    //需要被hook的class都需要在此列表配置
+    targetPackages=['com.yt.statistics.statplugin.base.BaseActivity','com.yt.statistics.statplugin.base.BaseFragment']
+}
+

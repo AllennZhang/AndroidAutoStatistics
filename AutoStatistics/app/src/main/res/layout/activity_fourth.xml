@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="姓名:"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxLength="10"-->
+            <!--android:hint="请输入您的姓名"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="密码:"/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="请输入密码"-->
+            <!--android:maxLength="12"-->
+            <!--android:inputType="textPassword|numberPassword"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_commit"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="登录"/>-->
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorPrimary" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

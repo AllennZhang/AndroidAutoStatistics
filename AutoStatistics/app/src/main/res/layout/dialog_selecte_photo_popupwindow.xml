@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_style"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="选择图片"
+            android:textColor="#a8a8a8"
+            android:gravity="center"
+            android:textSize="12sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e8e8e8"
+            />
+        <TextView
+            android:id="@+id/tv_dialog_take"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="拍照"
+            android:textColor="#1e8ae8"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e8e8e8"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="选择照片"
+            android:textColor="#1e8ae8"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+
+    <TextView
+        android:id="@+id/tv_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:textColor="#1e8ae8"
+        android:gravity="center"
+        android:background="@drawable/dialog_style"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

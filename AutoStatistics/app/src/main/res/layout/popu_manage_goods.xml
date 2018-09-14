@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/llt_popu_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="12dp"
+            android:textSize="14dp"
+            android:textColor="#444444"
+            android:text="管理"/>
+        <TextView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="12dp"
+            android:textSize="20dp"
+            android:textColor="#444444"
+            android:text="关闭"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e8e8e8"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#444444"
+                android:text="推荐"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#a8a8a8"
+                android:text="推荐后。。。。。。。。。。。。。。"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/iv_toggleButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textOn=""
+            android:textOff=""
+            android:checked="false"
+            android:background="@mipmap/ic_launcher"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_toggleButton"-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:background="@color/color_gray_c4"/>-->
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e8e8e8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="26dp">
+
+        <LinearLayout
+            android:id="@+id/llt_modify_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/icon_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#a8a8a8"
+                android:text="改价"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_modify_profit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#a8a8a8"
+                android:text="改收益"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ThirdActivity"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btn_toMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击返回首页" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e8e8e8"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="姓名：妹子"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支持语言："
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkbox_EN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="英文"/>
+        <CheckBox
+            android:id="@+id/checkbox_CH"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="中文"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_sexgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnShowPopu"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹框"/>
+
+</LinearLayout>
