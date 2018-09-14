@@ -34,7 +34,7 @@ public class InjectPlugin implements Plugin<Project>{
             project.buildDir.mkdirs()
         }
 
-        File file = new File(project.buildDir,'StatInject')
+        File file = new File(project.buildDir,'TraceAutoFile')
         if (!file.exists()){
             file.mkdir()
         }
