@@ -36,3 +36,8 @@ track module 数据存储与上报sdk
 debugger module debug调试工具
 
 ```
+
+## 感谢
+https://github.com/nailperry-zd/CodelessDA-Gradle-Plugin
+https://github.com/BryanSharp/hibeaver
+
