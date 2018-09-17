@@ -1,6 +1,9 @@
 # AndroidAutoStatistics
 ### Android无痕埋点sdk，实现所有页面曝光（onResume()）和点击事件（onClick()...）的自动埋点统计
 
+### 项目结构
+![image](https://github.com/YouriZhang/imagefolder/blob/master/autotrace.png)
+
 
 
 ### 基于ASM及Transform API开发的一个支持字节码插桩的Gradle 插件
@@ -38,6 +41,7 @@ debugger module debug调试工具
 ```
 
 ## 感谢
-https://github.com/nailperry-zd/CodelessDA-Gradle-Plugin
-https://github.com/BryanSharp/hibeaver
+* https://github.com/nailperry-zd/CodelessDA-Gradle-Plugin
+
+* https://github.com/BryanSharp/hibeaver
 
