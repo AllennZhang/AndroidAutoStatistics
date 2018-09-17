@@ -3,7 +3,7 @@
 
 ### 项目结构
 <div>
-  <img src="https://github.com/YouriZhang/imagefolder/blob/master/autotrace.png" width="200" height="400"/> 
+  <img src="https://github.com/YouriZhang/imagefolder/blob/master/autotrace.png" width="300" height="400"/> 
 </div>    
 
 
