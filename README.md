@@ -2,7 +2,7 @@
 ### Android无痕埋点sdk，实现所有页面曝光（onResume()）和点击事件（onClick()...）的自动埋点统计
 
 ### 项目结构
-![image](https://github.com/YouriZhang/imagefolder/blob/master/autotrace.png)
+![image](https://github.com/YouriZhang/imagefolder/blob/master/autotrace.png=200x400)
 
 
 
